@@ -1,0 +1,23 @@
+name: Enforce advanced security scanning
+
+on:
+  repository_dispatch:
+  schedule:
+    - cron: '00 5 * * *'
+
+jobs:
+  build:
+    name: Enforce advanced security scanning
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    
+    - name: Run enforcer tool
+      uses: github/advanced-security-enforcer@v1
+      env:
+        GH_ACTOR: ${{ secrets.GH_ACTOR }}
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        ORGANIZATION: ${{ secrets.ORGANIZATION }}
+        PR_BODY: your text goes here
