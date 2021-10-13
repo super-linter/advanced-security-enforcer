@@ -19,5 +19,5 @@ jobs:
       env:
         GH_ACTOR: ${{ secrets.GH_ACTOR }}
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        ORGANIZATION: ${{ secrets.ORGANIZATION }}
+        ORGANIZATION: super-linter
         PR_BODY: Please merge this PR once all the checks pass. It will enable GitHub Advanced Security code scanning in your repository.
