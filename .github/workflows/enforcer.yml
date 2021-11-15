@@ -2,8 +2,6 @@ name: Enforce advanced security scanning
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '55 18 * * *'
 
 jobs:
   build:
