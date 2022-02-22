@@ -20,3 +20,5 @@ jobs:
         ORGANIZATION: super-linter
         PR_BODY: Please merge this PR once all the checks pass. It will enable GitHub Advanced Security code scanning in your repository.
         HOURS_DELAY: 127
+        ACTIONS_RUNNER_DEBUG: true
+        ACTIONS_STEP_DEBUG: true
