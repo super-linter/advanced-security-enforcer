@@ -19,3 +19,4 @@ jobs:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
         ORGANIZATION: super-linter
         PR_BODY: Please merge this PR once all the checks pass. It will enable GitHub Advanced Security code scanning in your repository.
+        HOURS_DELAY: 0
